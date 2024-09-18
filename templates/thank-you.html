@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>Thank you for completing our surevey. Below are your answers for your records</p>
+
+<ul>
+    {% for answer in responses %}
+    <li>{{answer}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
